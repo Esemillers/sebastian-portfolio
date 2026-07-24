@@ -319,7 +319,10 @@ h1 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
-.project { transition: opacity .35s, transform .35s; }
+.project {
+  transition: opacity .25s, transform .25s;
+  contain: layout paint;
+}
 .project.hidden { display: none; }
 .nav-card {
   flex: 0 0 clamp(190px, 20vw, 310px);
@@ -345,7 +348,11 @@ h1 {
 .project-portrait .project-image { aspect-ratio: 3/4; }
 .project-square .project-image { aspect-ratio: 1; }
 .project-wide .project-image { aspect-ratio: 3/2; }
-.project-image img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.project-image img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s cubic-bezier(.2,.7,.2,1);
+}
 .project-open:hover img { transform: scale(1.025); }
 .project-info {
   display: flex;
