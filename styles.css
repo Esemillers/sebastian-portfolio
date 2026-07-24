@@ -144,8 +144,9 @@ body[data-active-section="contact"] .site-header {
   max-width: 1040px;
 }
 .archive-code {
-  position: absolute;
-  inset: 86px 32px auto auto;
+  position: fixed;
+  top: 86px;
+  right: 32px;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, minmax(86px, 1fr));
@@ -153,6 +154,7 @@ body[data-active-section="contact"] .site-header {
   width: min(520px, 42vw);
   max-height: 46vh;
   overflow: hidden;
+  pointer-events: none;
   color: rgba(245, 242, 234, .54);
   font-family: var(--mono);
   font-size: 8px;
@@ -700,7 +702,8 @@ footer div { display: flex; gap: 28px; }
   .menu-toggle { position: relative; z-index: 40; }
   .hero-copy { padding: 0 20px 105px; }
   .archive-code {
-    inset: 78px 20px auto auto;
+    top: 78px;
+    right: 20px;
     width: min(280px, 58vw);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
