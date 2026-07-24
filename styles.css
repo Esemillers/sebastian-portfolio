@@ -143,6 +143,7 @@ body[data-active-section="contact"] .site-header {
   padding: 0 32px 86px;
   max-width: 1040px;
 }
+/* Keep the decorative filename matrix anchored behind the homepage intro. */
 .archive-code {
   position: fixed;
   top: 86px;
