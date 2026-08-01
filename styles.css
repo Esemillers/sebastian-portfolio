@@ -53,7 +53,6 @@ body[data-active-section="contact"] .site-header {
   color: #f5f2ea;
 }
 .wordmark {
-  width: min-content;
   font-family: var(--sans);
   font-size: 13px;
   line-height: 1;
@@ -61,7 +60,10 @@ body[data-active-section="contact"] .site-header {
   text-transform: uppercase;
   font-weight: 600;
 }
-.wordmark span { display: block; }
+body[data-active-section="home"] .wordmark {
+  visibility: hidden;
+  pointer-events: none;
+}
 .site-nav {
   display: flex;
   gap: 24px;
